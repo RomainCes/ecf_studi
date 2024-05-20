@@ -1,0 +1,83 @@
+/* Reset des marges et des rembourrages par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif; /* Police par défaut */
+    background-image: url('https://images.prismic.io/amnestyfr/022c2194-972b-4a5d-b3c0-b3934c06ae2e_home.png?auto=compress,format&rect=0,1,1024,486&w=1000&h=475');
+    background-size: cover;
+    color: #ffffff; /* Couleur du texte */
+}
+
+/* Styles pour le conteneur principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles pour l'en-tête */
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    padding: 0;
+}
+
+/* Styles pour la section des actualités */
+.main-content {
+    padding: 50px 0;
+}
+
+.main-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Styles pour les cartes d'actualités */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 48%; /* Pour afficher deux cartes côte à côte */
+    background-color: rgba(158, 153, 153, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+/* Styles pour le pied de page */
+footer {
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}

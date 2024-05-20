@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue globale des lives</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Vue globale des lives</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Filtre par jour -->
+                <select class="form-select mb-3" id="filterDay">
+                    <option value="">Tous les jours</option>
+                    <option value="lundi">Lundi</option>
+                    <option value="mardi">Mardi</option>
+                    <option value="mercredi">Mercredi</option>
+                    <option value="jeudi">Jeudi</option>
+                    <option value="vendredi">Vendredi</option>
+                    <option value="samedi">Samedi</option>
+                    <option value="dimanche">Dimanche</option>
+                </select>
+                <!-- Filtre par thématique de live -->
+                <select class="form-select mb-3" id="filterTheme">
+                    <option value="">Toutes les thématiques</option>
+                    <option value="action">Action</option>
+                    <option value="aventure">Aventure</option>
+                    <option value="stratégie">Stratégie</option>
+                    <option value="sport">Sport</option>
+                    <option value="simulation">Simulation</option>
+                    <option value="fps">FPS</option>
+                </select>
+                <!-- Filtre par streamer -->
+                <select class="form-select mb-3" id="filterStreamer">
+                    <option value="">Tous les streamers</option>
+                    <option value="streamer1">Nom du streamer 1</option>
+                    <option value="streamer2">Nom du streamer 2</option>
+                    <option value="streamer3">Nom du streamer 3</option>
+                    <!-- Ajoutez d'autres options pour les streamers -->
+                </select>
+            </div>
+            <div class="col-md-8">
+                <!-- Liste des lives -->
+                <div id="liveList" class="list-group">
+                    <!-- Les éléments de la liste des lives seront ajoutés dynamiquement par JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

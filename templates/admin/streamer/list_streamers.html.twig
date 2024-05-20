@@ -1,0 +1,27 @@
+{# templates/admin/streamer/list_streamers.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des Streamers{% endblock %}
+
+{% block body %}
+    <h1>Liste des Streamers</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Email</th>
+                <!-- Ajoutez d'autres colonnes si nécessaire -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for streamer in streamers %}
+                <tr>
+                    <td>{{ streamer.name }}</td>
+                    <td>{{ streamer.email }}</td>
+                    <!-- Affichez d'autres propriétés du streamer si nécessaire -->
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

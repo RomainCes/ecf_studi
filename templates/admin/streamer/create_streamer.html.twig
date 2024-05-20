@@ -1,0 +1,21 @@
+{# templates/admin/streamer/create_streamer.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Créer un Streamer{% endblock %}
+
+{% block body %}
+    <h1>Créer un Streamer</h1>
+    <form action="{{ path('admin_create_streamer') }}" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <!-- Ajoutez d'autres champs si nécessaire -->
+        <button type="submit" class="btn btn-primary">Créer</button>
+    </form>
+{% endblock %}
