@@ -5,7 +5,7 @@
 - Blanc : #ffffff
 - Gris foncé : #343a40
 
-## Police
+## Police 
 - Police principale : Arial, sans-serif
 
 ## Maquettes
