@@ -1,0 +1,15 @@
+{# templates/streamer/live_form.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Formulaire de saisie de live{% endblock %}
+
+{% block body %}
+    <h1>Formulaire de saisie de live</h1>
+    <form method="post">
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <button type="submit">Valider</button>
+        {{ form_end(form) }}
+    </form>
+{% endblock %}

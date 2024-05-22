@@ -1,0 +1,29 @@
+{# templates/live/index.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block title %}All Lives{% endblock %}
+
+{% block body %}
+    <h1>All Lives</h1>
+
+    <form method="get" action="{{ path('lives_index') }}">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+
+        <label for="theme">Theme:</label>
+        <input type="text" id="theme" name="theme">
+
+        <label for="streamer">Streamer:</label>
+        <input type="text" id="streamer" name="streamer">
+
+        <button type="submit">Filter</button>
+    </form>
+
+    <ul>
+        {% for live in lives %}
+            <li>
+                <a href="{{ path('live_show', { id: live.id }) }}">{{ live.name }}</a> by {{ live.streamer }} on {{ live.date|date('Y-m-d H:i') }} ({{ live.theme }})
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

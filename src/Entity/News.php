@@ -19,8 +19,8 @@ class News
     #[ORM\Column(type: 'text')]
     private $content;
 
-    #[ORM\Column(length: 255)]
-    private ?string $news = null;
+    #[ORM\Column(type: 'string', length: 255, nullable: true)]
+    private $news;
 
     public function getId(): ?int
     {

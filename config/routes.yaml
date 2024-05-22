@@ -13,3 +13,19 @@ home:
 global_lives:
     path: /global-lives
     controller: App\Controller\GlobalLivesController::index
+
+streamer_homepage:
+    path: /streamer/home
+    controller: App\Controller\StreamerController::home
+
+streamer_live_form:
+    path: /streamer/live-form
+    controller: App\Controller\StreamerController::liveForm
+
+streamer_user_registration:
+    path: /streamer/user-registration
+    controller: App\Controller\StreamerController::userRegistration
+
+streamer_statistics:
+    path: /streamer/statistics
+    controller: App\Controller\StreamerController::statistics

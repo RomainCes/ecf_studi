@@ -1,0 +1,27 @@
+{# templates/streamer/statistics.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Statistiques{% endblock %}
+
+{% block body %}
+    <h1>Statistiques</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Live</th>
+                <th>Date</th>
+                <th>Nombre de visiteurs</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stat in statistics %}
+            <tr>
+                <td>{{ stat.live }}</td>
+                <td>{{ stat.date|date('Y-m-d') }}</td>
+                <td>{{ stat.visitors }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
